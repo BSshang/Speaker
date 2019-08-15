@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_main"
+    android:rotation="180">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bg_main"
+        android:orientation="horizontal"
+        android:padding="10.0dip">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:rotation="-90"
+            android:src="@drawable/logo" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/btn_haptic"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/margin"
+                android:drawableTop="@drawable/haptic"
+                android:rotation="-90"
+                android:text="Haptic"
+                android:textColor="#E4E4E4"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/btn_photos"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/margin"
+                android:drawableTop="@drawable/photos"
+                android:rotation="-90"
+                android:text="Photos"
+                android:textColor="#E4E4E4"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/btn_message"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:drawableTop="@drawable/messages"
+                android:rotation="-90"
+                android:layout_marginBottom="@dimen/margin"
+                android:text="Message"
+                android:textColor="#E4E4E4"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/btn_map"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:drawableTop="@drawable/map"
+                android:rotation="-90"
+                android:layout_marginBottom="@dimen/margin"
+                android:text="Map"
+                android:textColor="#E4E4E4"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/btn_music"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:drawableTop="@drawable/music"
+                android:rotation="-90"
+                android:layout_marginBottom="@dimen/margin"
+                android:text="Music"
+                android:textColor="#E4E4E4"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/btn_call"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/call"
+                android:gravity="center"
+                android:rotation="-90"
+                android:text="Call"
+                android:textColor="#E4E4E4"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_marginLeft="10dp"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#5D6B78"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:rotation="-90"
+            android:src="@drawable/car" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <View
+                android:layout_marginBottom="20dp"
+                android:layout_width="20dp"
+                android:layout_height="1dp"
+                android:background="#5D6B78"/>
+
+            <ImageView
+                android:id="@+id/btn_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rotation="-90"
+                android:src="@drawable/search" />
+
+            <View
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="20dp"
+                android:layout_height="1dp"
+                android:background="#5D6B78"/>
+
+            <ImageView
+                android:id="@+id/btn_microphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rotation="-90"
+                android:src="@drawable/microphone" />
+
+            <View
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="20dp"
+                android:layout_height="1dp"
+                android:background="#5D6B78"/>
+
+            <ImageView
+                android:id="@+id/btn_wifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rotation="-90"
+                android:src="@drawable/wifi" />
+
+            <View
+                android:layout_marginTop="20dp"
+                android:layout_width="20dp"
+                android:layout_height="1dp"
+                android:background="#5D6B78"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.chogge.speaker.view.Knob
+                android:id="@+id/knob_left"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/icon_radio_bg"
+                android:rotation="-90"
+                app:kBorderWidth="0.0dip"
+                app:kCircularIndicatorColor="@android:color/holo_red_dark"
+                app:kCircularIndicatorRelativePosition="0.55"
+                app:kCircularIndicatorRelativeRadius="0.03"
+                app:kDefaultState="10"
+                app:kFreeRotation="false"
+                app:kIndicatorWidth="0.0dip"
+                app:kKnobDrawable="@drawable/radio_button"
+                app:kKnobDrawableRotates="true"
+                app:kMaxAngle="120.0"
+                app:kMinAngle="-120.0"
+                app:kNumberOfStates="9"
+                app:kSelectedStateMarkerColor="@android:color/holo_red_dark"
+                app:kSelectedStateMarkerContinuous="false"
+                app:kStateMarkersAccentColor="@android:color/white"
+                app:kStateMarkersAccentPeriodicity="5"
+                app:kStateMarkersAccentRelativeLength="0.09"
+                app:kStateMarkersAccentWidth="2.0dip"
+                app:kStateMarkersColor="@android:color/white"
+                app:kStateMarkersRelativeLength="0.08"
+                app:kStateMarkersWidth="1.0dip"
+                app:kSwipeSensitivityPixels="15" />
+
+            <com.chogge.speaker.view.Knob
+                android:id="@+id/knob_right"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/icon_radio_bg"
+                android:rotation="-90"
+                app:kBorderWidth="0.0dip"
+                app:kCircularIndicatorColor="@android:color/holo_red_dark"
+                app:kCircularIndicatorRelativePosition="0.55"
+                app:kCircularIndicatorRelativeRadius="0.03"
+                app:kDefaultState="10"
+                app:kFreeRotation="false"
+                app:kIndicatorWidth="0.0dip"
+                app:kKnobDrawable="@drawable/radio_button"
+                app:kKnobDrawableRotates="true"
+                app:kMaxAngle="120.0"
+                app:kMinAngle="-120.0"
+                app:kNumberOfStates="9"
+                app:kSelectedStateMarkerColor="@android:color/holo_red_dark"
+                app:kSelectedStateMarkerContinuous="false"
+                app:kStateMarkersAccentColor="@android:color/white"
+                app:kStateMarkersAccentPeriodicity="5"
+                app:kStateMarkersAccentRelativeLength="0.09"
+                app:kStateMarkersAccentWidth="2.0dip"
+                app:kStateMarkersColor="@android:color/white"
+                app:kStateMarkersRelativeLength="0.08"
+                app:kStateMarkersWidth="1.0dip"
+                app:kSwipeSensitivityPixels="15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btn_max"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="65dp"
+                android:rotation="90"
+                android:src="@drawable/min" />
+
+            <com.chogge.speaker.view.VolumeView
+                android:id="@+id/volume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rotation="-90" />
+
+            <ImageView
+                android:id="@+id/btn_min"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="60dp"
+                android:rotation="90"
+                android:src="@drawable/max" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true">
+
+        <RelativeLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#5D6B78"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#5D6B78"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/btn_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rotation="-90"
+                android:text="SETTINGS"
+                android:textColor="#E4E4E4"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/btn_controls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:rotation="-90"
+                android:text="CONTROLS"
+                android:textColor="#E4E4E4"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

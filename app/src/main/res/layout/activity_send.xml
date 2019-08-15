@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    tools:context=".activity.SendActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logo"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints" />
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        tools:layout_editor_absoluteX="34dp"
+        app:rowCount="7"
+        app:columnCount="3">
+        <!--6行3列 实现占满整个屏幕-->
+
+
+        <!--跨四列 自动填充 权重2-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+            <TextView
+                android:id="@+id/freq_1"
+                android:text="SMT5050-03H02 LF\n         4000Hz"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <TextView
+                android:id="@+id/freq_16"
+                android:text="BMT1612H14 LF\n         2048Hz"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="18dp"/>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <TextView
+                android:id="@+id/freq_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BMT3208H17-02\n         800Hz"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <TextView
+                android:id="@+id/freq_4"
+                android:text="SMT5555-03H2.5 LF\n           3100Hz"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="18dp"/>
+
+        </RelativeLayout>
+
+        //列 行权重为1
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+            <TextView
+                android:id="@+id/freq_2"
+                android:text="BPT2412XH16-06\n         2500Hz"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="18dp"/>
+        </RelativeLayout>
+        //列 行权重为1
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <TextView
+                android:id="@+id/freq_6"
+                android:text="BDT38.5-11B-08H20-BOX\n               1000Hz"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="18dp"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <TextView
+                android:id="@+id/freq_7"
+                android:text="SMT8585-3.6H03-03 LF\n              2700Hz"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="18dp"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <TextView
+                android:id="@+id/freq_5"
+                android:text="BPT2403XH16W203\n           3700Hz"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="18dp"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <TextView
+                android:id="@+id/freq_9"
+                android:text="BMS3650H13-03 LF\n           2200Hz"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="18dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <TextView
+                android:id="@+id/freq_10"
+                android:text="SMT1212-05H6.5F-04 LF\n               2400Hz"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="18dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <TextView
+                android:id="@+id/freq_8"
+                android:text="BMT2512H13-07 LF\n           740Hz"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="18dp"/>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <TextView
+                android:id="@+id/freq_12"
+                android:text="BLS50-12-08H16.7W047-01\n                 1500Hz"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="18dp"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <TextView
+                android:id="@+id/freq_13"
+                android:text="BPT1412XH7.5-10\n          4000Hz"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="18dp"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <TextView
+                android:id="@+id/freq_11"
+                android:text="FE23032-SBMLF-01\n           2000HZ"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="18dp"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <TextView
+                android:id="@+id/freq_15"
+                android:text="BLS50-12-08H7.5-BOX EL\n                3000Hz"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="18dp"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:layout_rowSpan="2"
+            app:layout_gravity="fill_vertical"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="2">
+
+            <TextView
+                android:id="@+id/freq_17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="STOP"
+                android:textColor="@color/white"
+                android:textSize="18dp">
+
+            </TextView>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:layout_rowSpan="2"
+            app:layout_gravity="fill_vertical"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="2">
+
+            <com.chogge.speaker.view.Knob
+                android:id="@+id/knob_right"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/icon_radio_bg"
+                app:kBorderWidth="0.0dip"
+                app:kCircularIndicatorColor="@android:color/holo_red_dark"
+                app:kCircularIndicatorRelativePosition="0.55"
+                app:kCircularIndicatorRelativeRadius="0.03"
+                app:kDefaultState="10"
+                app:kFreeRotation="false"
+                app:kIndicatorWidth="0.0dip"
+                app:kKnobDrawable="@drawable/radio_button"
+                app:kKnobDrawableRotates="true"
+                app:kMaxAngle="120.0"
+                app:kMinAngle="-120.0"
+                app:kNumberOfStates="9"
+                app:kSelectedStateMarkerColor="@android:color/holo_red_dark"
+                app:kSelectedStateMarkerContinuous="false"
+                app:kStateMarkersAccentColor="@android:color/white"
+                app:kStateMarkersAccentPeriodicity="5"
+                app:kStateMarkersAccentRelativeLength="0.09"
+                app:kStateMarkersAccentWidth="2.0dip"
+                app:kStateMarkersColor="@android:color/white"
+                app:kStateMarkersRelativeLength="0.08"
+                app:kStateMarkersWidth="1.0dip"
+                app:kSwipeSensitivityPixels="15" />
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/knob_right"
+                android:layout_toRightOf="@+id/knob_right"
+                android:layout_marginLeft="23dp"
+                android:layout_marginBottom="30dp"
+                android:text="电压"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:layout_rowSpan="2"
+            app:layout_gravity="fill_vertical"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="2">
+
+            <com.chogge.speaker.view.Knob
+                android:id="@+id/knob_left"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/icon_radio_bg"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                app:kBorderWidth="0.0dip"
+                app:kCircularIndicatorColor="@android:color/holo_red_dark"
+                app:kCircularIndicatorRelativePosition="0.55"
+                app:kCircularIndicatorRelativeRadius="0.03"
+                app:kDefaultState="10"
+                app:kFreeRotation="false"
+                app:kIndicatorWidth="0.0dip"
+                app:kKnobDrawable="@drawable/radio_button"
+                app:kKnobDrawableRotates="true"
+                app:kMaxAngle="120.0"
+                app:kMinAngle="-120.0"
+                app:kNumberOfStates="9"
+                app:kSelectedStateMarkerColor="@android:color/holo_red_dark"
+                app:kSelectedStateMarkerContinuous="false"
+                app:kStateMarkersAccentColor="@android:color/white"
+                app:kStateMarkersAccentPeriodicity="5"
+                app:kStateMarkersAccentRelativeLength="0.09"
+                app:kStateMarkersAccentWidth="2.0dip"
+                app:kStateMarkersColor="@android:color/white"
+                app:kStateMarkersRelativeLength="0.08"
+                app:kStateMarkersWidth="1.0dip"
+                app:kSwipeSensitivityPixels="15" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/knob_left"
+                android:layout_toRightOf="@+id/knob_left"
+                android:layout_marginLeft="23dp"
+                android:layout_marginBottom="30dp"
+                android:text="频率"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+        </RelativeLayout>
+        //列 行权重为1
+
+
+    </android.support.v7.widget.GridLayout>
+</android.support.constraint.ConstraintLayout>
