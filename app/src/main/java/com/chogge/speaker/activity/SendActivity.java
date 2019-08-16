@@ -394,8 +394,6 @@ public class SendActivity extends AppCompatActivity implements View.OnTouchListe
         switch(file_type){
             case 0: soundID_num = soundID_1; break;
             case 1: soundID_num = soundID_2; break;
-//            case 2: soundID_num = soundID_3; break;
-//            case 3: soundID_num = soundID_4; break;
             default :
                 soundID_num = soundID_1; break;
         }
@@ -441,7 +439,6 @@ public class SendActivity extends AppCompatActivity implements View.OnTouchListe
 
     public String getSound_V(int soundID){
         String endString =  "";
-//        int sub = Integer.parseInt(soundID_count.substring(6,9));
         if( soundID > 4 ){
                 endString = soundID_count.substring(0,6) + "0"+ (50 +((soundID - 4)*10));
         }else if(soundID < 4 ){
