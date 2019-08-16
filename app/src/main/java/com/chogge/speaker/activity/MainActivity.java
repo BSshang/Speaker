@@ -99,8 +99,6 @@ public class MainActivity extends Activity implements View.OnTouchListener {
         switch(file_type){
             case 0: soundID_num = soundID_1; break;
             case 1: soundID_num = soundID_2; break;
-//            case 2: soundID_num = soundID_3; break;
-//            case 3: soundID_num = soundID_4; break;
             default :
                 soundID_num = soundID_1; break;
         }
@@ -160,8 +158,6 @@ public class MainActivity extends Activity implements View.OnTouchListener {
         switch(file_type){
             case 0: soundID_num = soundID_1; break;
             case 1: soundID_num = soundID_2; break;
-//            case 2: soundID_num = soundID_3; break;
-//            case 3: soundID_num = soundID_4; break;
             default :
                 soundID_num = soundID_1; break;
         }
